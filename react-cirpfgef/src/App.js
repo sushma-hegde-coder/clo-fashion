@@ -38,9 +38,8 @@ export default function App() {
       <PricingFilter 
       products={products}
       setFilteredProducts={setFilteredProducts}
-      />
-
-      <h4>Sorting</h4>
+      /> 
+        
       <Sort       
       products={products}
       sortVal={sortVal}
