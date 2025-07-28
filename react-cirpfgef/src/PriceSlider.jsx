@@ -2,10 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 
 const PriceSlider = ({ prodPrice, setProdPrice, products, setProductList }) => {
   const handleChange = (val) => {
-    setProdPrice(val)
-    let pro = products.filter(product => product.price <= val)
-    console.log("pro", pro)
-    setProductList(products.filter(product => product.price < val))
+    setProdPrice(val)   
+    setProductList(products.filter(product => product.price <= val))
   }
 
   return (
