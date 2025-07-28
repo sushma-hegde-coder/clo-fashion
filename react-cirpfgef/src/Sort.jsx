@@ -18,6 +18,7 @@ function Sorting({ products, sortVal, setSortVal, productList, setProductList })
   }
   return (
     <>
+      <h4>Sorting</h4>
       <label style={{color: "white"}}>
         Sort by:
         <select name="selectedOption" value={sortVal} onChange={(e) => handleChange(e.target.value)}>
